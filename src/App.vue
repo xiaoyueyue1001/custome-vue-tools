@@ -4,6 +4,7 @@
     <div id="nav">
       <router-link to="/MapCanvas">MapCanvas</router-link>
       <router-link to="/CircleProgressBar">CircleProgressBar</router-link>
+      <router-link to="/select-all">带全选下拉框</router-link>
     </div>
     <router-view />
   </div>
@@ -19,7 +20,10 @@
 }
 #nav {
   padding: 30px;
+  display: flex;
+  justify-content: center;
   a {
+    margin: 0 50px;
     font-weight: bold;
     color: #2c3e50;
     &.router-link-exact-active {

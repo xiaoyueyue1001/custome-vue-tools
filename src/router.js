@@ -14,6 +14,11 @@ export default new Router({
       path: '/CircleProgressBar',
       name: 'CircleProgressBar',
       component: () => import('./components/CircleProgressBar/index.vue')
+    },
+    {
+      path: '/select-all',
+      name: 'SelectAll',
+      component: () => import('./components/SelectAll/index.vue')
     }
   ]
 })
